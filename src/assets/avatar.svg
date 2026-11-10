@@ -1,15 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300" role="img" aria-label="Ilustración de Jane Doe">
-  <path d="M150 40c-44 0-72 34-72 84 0 40 4 76 12 106h120c8-30 12-66 12-106 0-50-28-84-72-84z" fill="#1d2b45" />
-  <path d="M106 100c-10 44-8 86 2 116l14 6c-12-34-14-78-4-114z" fill="#1d2b45" />
-  <path d="M194 100c10 44 8 86-2 116l-14 6c12-34 14-78 4-114z" fill="#1d2b45" />
-  <rect x="134" y="150" width="32" height="48" rx="14" fill="#efb98f" />
-  <ellipse cx="150" cy="118" rx="44" ry="48" fill="#f6c9a5" />
-  <path d="M106 104c0-42 20-60 44-60s44 18 44 60c-10-18-24-28-44-28s-34 10-44 28z" fill="#1d2b45" />
-  <ellipse cx="134" cy="120" rx="4" ry="5.5" fill="#1d2b45" />
-  <ellipse cx="166" cy="120" rx="4" ry="5.5" fill="#1d2b45" />
-  <path d="M141 137c5 6 13 6 18 0" fill="none" stroke="#c0785c" stroke-width="3" stroke-linecap="round" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300" role="img" aria-label="Ilustración de Daniel Castañeda Tovar">
   <path d="M62 300c0-62 40-96 88-96s88 34 88 96z" fill="#26324a" />
   <path d="M128 206h44l-22 40z" fill="#f7f8fa" />
+  <rect x="134" y="150" width="32" height="48" rx="14" fill="#e5af85" />
+  <ellipse cx="150" cy="118" rx="43" ry="47" fill="#eebb92" />
+  <ellipse cx="107" cy="122" rx="7" ry="10" fill="#eebb92" />
+  <ellipse cx="193" cy="122" rx="7" ry="10" fill="#eebb92" />
+  <path d="M107 116c0-44 19-66 43-66s43 22 43 66c-8-18-20-30-43-30s-35 12-43 30z" fill="#1d2b45" />
+  <ellipse cx="134" cy="121" rx="4" ry="5.5" fill="#1d2b45" />
+  <ellipse cx="166" cy="121" rx="4" ry="5.5" fill="#1d2b45" />
+  <path d="M126 105h14" stroke="#1d2b45" stroke-width="3" stroke-linecap="round" />
+  <path d="M160 105h14" stroke="#1d2b45" stroke-width="3" stroke-linecap="round" />
+  <path d="M141 138c5 6 13 6 18 0" fill="none" stroke="#b96e50" stroke-width="3" stroke-linecap="round" />
   <rect x="96" y="236" width="108" height="48" rx="6" fill="#d8dce3" />
   <rect x="104" y="244" width="92" height="30" rx="3" fill="#eef1f5" />
   <rect x="86" y="284" width="128" height="10" rx="5" fill="#b6bec9" />

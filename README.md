@@ -3,8 +3,8 @@
 Proyecto de la actividad **Creación de un Portafolio Web con React.js y Bootstrap** del programa
 Análisis y Desarrollo de Software (ADSO).
 
-La página recrea el portafolio personal de Jane Doe con secciones de presentación, habilidades,
-proyectos, recomendaciones y formulario de contacto.
+La página presenta el portafolio personal de Daniel Castañeda Tovar con secciones de presentación,
+habilidades, proyectos, recomendaciones y formulario de contacto.
 
 ## Tecnologías
 
@@ -61,4 +61,4 @@ npm run build
 
 ## Autor
 
-docosovo
+Daniel Castañeda Tovar

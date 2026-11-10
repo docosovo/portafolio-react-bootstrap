@@ -5,14 +5,14 @@ function Header() {
     <Navbar expand="md" data-bs-theme="dark" className="navbar-portfolio py-3">
       <Container className="page-container">
         <Navbar.Brand href="#about">
-          <span className="d-block fs-5 fw-bold">Jane Doe</span>
+          <span className="d-block fs-5 fw-bold">Daniel Castañeda Tovar</span>
           <span className="brand-contact d-block">
             <i className="bi bi-envelope me-1"></i>
-            jdoe@jeemail.com
+            doco93229@gmail.com
           </span>
           <span className="brand-contact d-block">
             <i className="bi bi-telephone me-1"></i>
-            +13456764598
+            +57 302 213 7152
           </span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="main-nav" />

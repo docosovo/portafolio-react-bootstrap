@@ -1,0 +1,159 @@
+.page-container {
+  max-width: 1000px;
+}
+
+.navbar-portfolio {
+  background-color: var(--purple);
+}
+
+.navbar-portfolio .navbar-brand {
+  color: #ffffff;
+  line-height: 1.3;
+}
+
+.navbar-portfolio .brand-contact {
+  font-size: 0.78rem;
+  font-weight: 400;
+  color: #ece3f7;
+}
+
+.navbar-portfolio .nav-link {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.navbar-portfolio .nav-link:hover {
+  color: #d9c2f2;
+}
+
+.section-title {
+  color: var(--purple);
+  font-size: 2rem;
+  margin-bottom: 1.75rem;
+}
+
+.hero-name {
+  color: var(--purple);
+  font-size: 2.6rem;
+}
+
+.hero-text {
+  color: #52525b;
+  max-width: 640px;
+}
+
+.hero-avatar {
+  max-width: 250px;
+}
+
+section {
+  scroll-margin-top: 1rem;
+}
+
+.skill-card {
+  border: 1px solid #e4e4e7;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.skill-icon {
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e4e4e7;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  font-size: 1.4rem;
+}
+
+.skill-name {
+  font-size: 0.85rem;
+  margin-bottom: 0.4rem;
+}
+
+.skill-years {
+  font-size: 0.8rem;
+  color: #52525b;
+}
+
+.project-title {
+  font-size: 1.05rem;
+  margin-bottom: 0.4rem;
+}
+
+.project-list {
+  font-size: 0.9rem;
+  color: #52525b;
+  padding-left: 1.1rem;
+}
+
+.project-divider {
+  border-color: #e4e4e7;
+  opacity: 1;
+  margin: 1.5rem 0;
+}
+
+.recommendation-card {
+  border: 1px solid #e4e4e7;
+  border-radius: 8px;
+  height: 100%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.recommendation-text {
+  font-size: 0.82rem;
+  font-style: italic;
+  color: #3f3f46;
+}
+
+.form-label {
+  font-size: 0.8rem;
+  color: #52525b;
+}
+
+.recommendation-form {
+  max-width: 660px;
+}
+
+.scroll-top {
+  position: fixed;
+  right: 1.75rem;
+  bottom: 1.75rem;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--purple);
+  color: #ffffff;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+}
+
+.scroll-top:hover {
+  background-color: var(--purple-dark);
+  color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .hero-name {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+}

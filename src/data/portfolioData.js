@@ -18,13 +18,16 @@ export const navLinks = [
 ]
 
 export const skills = [
-  { id: 1, name: 'HTML', years: '3 years experience', icon: 'bi-filetype-html', color: '#e34f26' },
-  { id: 2, name: 'CSS', years: '3 years experience', icon: 'bi-filetype-css', color: '#264de4' },
-  { id: 3, name: 'JavaScript', years: '3 years experience', icon: 'bi-filetype-js', color: '#c9a800' },
-  { id: 4, name: 'React', years: '1 year experience', icon: 'bi-braces', color: '#0d6efd' },
-  { id: 5, name: 'Java', years: '1 year experience', icon: 'bi-cup-hot-fill', color: '#8a5a2b' },
-  { id: 6, name: 'Node.js', years: '1 year experience', icon: 'bi-hexagon-fill', color: '#5a9e4b' },
-  { id: 7, name: 'PHP', years: '3 years experience', icon: 'bi-filetype-php', color: '#777bb4' },
+  { id: 1, name: 'HTML', years: '2 years experience', icon: 'bi-filetype-html', color: '#e83e8c' },
+  { id: 2, name: 'CSS', years: '2 years experience', icon: 'bi-filetype-css', color: '#38bdf8' },
+  { id: 3, name: 'JavaScript', years: '1 years experience', icon: 'bi-filetype-js', color: '#c2185b' },
+  { id: 4, name: 'React', years: '2 months experience', icon: 'bi-braces', color: '#0284c7' },
+  { id: 5, name: 'Java', years: '2 months experience', icon: 'bi-cup-hot-fill', color: '#f472b6' },
+  { id: 6, name: 'Node.js', years: '2 months experience', icon: 'bi-hexagon-fill', color: '#0ea5e9' },
+  { id: 7, name: 'PHP', years: '5 months experience', icon: 'bi-filetype-php', color: '#be185d' },
+  { id: 8, name: 'GitHub', years: '1 years experience', icon: 'bi-github', color: '#56bebe' },
+  { id: 9, name: 'c#', years: '1 years experience', icon: 'bi-github', color: '#56bebe' },
+
 ]
 
 export const projects = [
@@ -51,6 +54,11 @@ export const projects = [
     title: 'Personal Blog',
     description:
       'Designed a personal blog to share interests, ideas, goals and future plans, including a section about my dream office. Developed with HTML and CSS and published on GitHub Pages',
+  },
+  { id: 5,
+    title: 'Portfolio Website',
+    description:
+      'Created a responsive portfolio website to showcase my projects and skills, with a modern design and smooth animations. Developed with React, Bootstrap and JavaScript and published on GitHub Pages',
   },
 ]
 

@@ -3,55 +3,80 @@
   max-width: 1000px;
 }
 
-/* ===== Header / Navbar ===== */
+/* ===== Header / Navbar =====
+   Degradado rosa -> blanco -> celeste, con borde celeste y textos oscuros. */
 .navbar-portfolio {
-  background-color: var(--purple);
+  background: linear-gradient(90deg, var(--pink-light) 0%, #ffffff 50%, var(--celeste-light) 100%);
+  border-bottom: 3px solid var(--celeste);
+  box-shadow: 0 2px 10px rgba(56, 189, 248, 0.15);
 }
 
 .navbar-portfolio .navbar-brand {
-  color: #ffffff;
+  color: var(--pink-dark);
   line-height: 1.3;
 }
 
 .navbar-portfolio .brand-contact {
   font-size: 0.78rem;
   font-weight: 400;
-  color: #ece3f7;
+  color: #475569;
 }
 
 .navbar-portfolio .nav-link {
-  color: #ffffff;
+  color: #334155;
   font-size: 0.9rem;
   font-weight: 500;
 }
 
 .navbar-portfolio .nav-link:hover,
 .navbar-portfolio .nav-link:focus {
-  color: #d9c2f2;
+  color: var(--pink-dark);
+}
+
+.navbar-portfolio .navbar-toggler {
+  border-color: var(--celeste);
 }
 
 /* ===== Títulos de sección ===== */
 .section-title {
-  color: var(--purple);
+  position: relative;
+  color: var(--pink-dark);
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1.75rem;
+  padding-bottom: 0.45rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 64px;
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--pink), var(--celeste));
 }
 
 /* ===== Presentación ===== */
 .hero-name {
-  color: var(--purple);
+  color: var(--pink-dark);
   font-size: 2.6rem;
   font-weight: 700;
 }
 
 .hero-text {
-  color: #52525b;
+  color: #475569;
   max-width: 640px;
 }
 
 .hero-avatar {
   max-width: 250px;
+  padding: 1rem;
+  background: radial-gradient(circle at 50% 35%, var(--pink-light) 0%, var(--celeste-light) 100%);
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(56, 189, 248, 0.2);
 }
 
 section {
@@ -60,95 +85,116 @@ section {
 
 /* ===== Habilidades ===== */
 .skill-card {
-  border: 1px solid #e4e4e7;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid var(--celeste-light);
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
 .skill-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+  border-color: var(--pink);
+  box-shadow: 0 10px 24px rgba(232, 62, 140, 0.18);
 }
 
 .skill-icon {
-  width: 46px;
-  height: 46px;
+  width: 48px;
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #e4e4e7;
-  border-radius: 8px;
+  border: 1px solid var(--celeste);
+  border-radius: 12px;
+  background-color: var(--celeste-light);
   margin-bottom: 0.75rem;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 .skill-name {
-  font-size: 0.85rem;
-  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+  color: var(--pink-dark);
+  margin-bottom: 0.35rem;
 }
 
 .skill-years {
   font-size: 0.8rem;
-  color: #52525b;
+  color: #64748b;
 }
 
 /* ===== Proyectos ===== */
 .project-title {
   font-size: 1.05rem;
+  color: var(--pink-dark);
   margin-bottom: 0.4rem;
 }
 
 .project-list {
   font-size: 0.9rem;
-  color: #52525b;
+  color: #475569;
   padding-left: 1.1rem;
 }
 
+.project-list li::marker {
+  color: var(--celeste-dark);
+}
+
 .project-divider {
-  border-color: #e4e4e7;
+  border-color: var(--celeste-light);
   opacity: 1;
   margin: 1.5rem 0;
 }
 
 /* ===== Recomendaciones ===== */
 .recommendation-card {
-  border: 1px solid #e4e4e7;
-  border-radius: 8px;
+  border: 1px solid var(--celeste-light);
+  border-top: 4px solid var(--pink);
+  border-radius: 10px;
   height: 100%;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.1);
 }
 
 .recommendation-text {
   font-size: 0.82rem;
   font-style: italic;
-  color: #3f3f46;
+  color: #475569;
 }
 
 .recommendation-author {
   font-size: 0.75rem;
-  color: #71717a;
+  color: var(--celeste-dark);
   margin-top: 0.75rem;
 }
 
 /* ===== Formulario ===== */
 .form-label {
-  font-size: 0.8rem;
-  color: #52525b;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--pink-dark);
 }
 
 .recommendation-form {
   max-width: 660px;
 }
 
+.recommendation-form .form-control {
+  border-color: #bae6fd;
+}
+
+.recommendation-form .form-control:focus {
+  border-color: var(--celeste);
+  box-shadow: 0 0 0 0.2rem rgba(56, 189, 248, 0.25);
+}
+
 .btn-submit {
-  --bs-btn-color: var(--purple);
-  --bs-btn-border-color: var(--purple);
-  --bs-btn-hover-bg: var(--purple);
-  --bs-btn-hover-border-color: var(--purple);
+  --bs-btn-color: var(--pink-dark);
+  --bs-btn-border-color: var(--pink);
+  --bs-btn-hover-bg: var(--pink);
+  --bs-btn-hover-border-color: var(--pink);
   --bs-btn-hover-color: #ffffff;
-  --bs-btn-active-bg: var(--purple-dark);
-  --bs-btn-active-border-color: var(--purple-dark);
+  --bs-btn-active-bg: var(--pink-dark);
+  --bs-btn-active-border-color: var(--pink-dark);
   --bs-btn-active-color: #ffffff;
   min-width: 120px;
 }
@@ -164,18 +210,18 @@ section {
   align-items: center;
   justify-content: center;
   padding: 0;
-  border: none;
+  border: 2px solid #ffffff;
   border-radius: 50%;
-  background-color: var(--purple);
+  background-color: var(--pink);
   color: #ffffff;
   font-size: 1.2rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 6px 16px rgba(232, 62, 140, 0.35);
   z-index: 1000;
 }
 
 .scroll-top:hover,
 .scroll-top:focus {
-  background-color: var(--purple-dark);
+  background-color: var(--celeste-dark);
   color: #ffffff;
 }
 

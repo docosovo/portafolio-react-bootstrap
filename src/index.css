@@ -1,17 +1,25 @@
 /* ===== Variables y estilos globales =====
-   El morado del diseño se usa tanto en clases propias como en las utilidades
-   de Bootstrap (bg-primary, text-primary, btn-outline-primary, etc.). */
+   Paleta: blanco, rosa y celeste.
+   El rosa se usa como color primario y el celeste como acento. */
 :root {
-  --purple: #6500b6;
-  --purple-dark: #4f0089;
-  --purple-light: #f3ebfb;
-  --bs-primary: #6500b6;
-  --bs-primary-rgb: 101, 0, 182;
+  --pink: #e83e8c;
+  --pink-dark: #c2185b;
+  --pink-light: #fce7f3;
+  --celeste: #38bdf8;
+  --celeste-dark: #0284c7;
+  --celeste-light: #e0f2fe;
+
+  --bs-primary: #e83e8c;
+  --bs-primary-rgb: 232, 62, 140;
+  --bs-link-color: #0284c7;
+  --bs-link-hover-color: #c2185b;
   --bs-body-font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-  --bs-body-color: #3f3f46;
+  --bs-body-color: #334155;
+  --bs-body-bg: #ffffff;
+
   font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
   line-height: 1.6;
-  color: #3f3f46;
+  color: #334155;
   background-color: #ffffff;
 }
 
@@ -30,12 +38,16 @@ h2,
 h3,
 h4,
 h5 {
-  color: #18181b;
+  color: #0f172a;
   font-weight: 700;
 }
 
 a {
   text-decoration: none;
+}
+
+a:hover {
+  color: var(--pink-dark);
 }
 
 @media (prefers-reduced-motion: reduce) {

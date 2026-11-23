@@ -4,7 +4,7 @@ import { Container, Nav, Navbar } from 'react-bootstrap'
 // Usa el Navbar de Bootstrap (colapsable en pantallas pequeñas).
 function Header({ name, email, phone, links }) {
   return (
-    <Navbar expand="md" data-bs-theme="dark" sticky="top" className="navbar-portfolio py-2">
+    <Navbar expand="md" sticky="top" className="navbar-portfolio py-2">
       <Container className="page-container">
         <Navbar.Brand href="#about">
           <span className="d-block fs-5 fw-bold">{name}</span>

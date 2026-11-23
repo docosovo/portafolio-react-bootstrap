@@ -1,7 +1,9 @@
+/* ===== Contenedor principal ===== */
 .page-container {
   max-width: 1000px;
 }
 
+/* ===== Header / Navbar ===== */
 .navbar-portfolio {
   background-color: var(--purple);
 }
@@ -23,19 +25,24 @@
   font-weight: 500;
 }
 
-.navbar-portfolio .nav-link:hover {
+.navbar-portfolio .nav-link:hover,
+.navbar-portfolio .nav-link:focus {
   color: #d9c2f2;
 }
 
+/* ===== Títulos de sección ===== */
 .section-title {
   color: var(--purple);
   font-size: 2rem;
+  font-weight: 700;
   margin-bottom: 1.75rem;
 }
 
+/* ===== Presentación ===== */
 .hero-name {
   color: var(--purple);
   font-size: 2.6rem;
+  font-weight: 700;
 }
 
 .hero-text {
@@ -48,9 +55,10 @@
 }
 
 section {
-  scroll-margin-top: 1rem;
+  scroll-margin-top: 90px;
 }
 
+/* ===== Habilidades ===== */
 .skill-card {
   border: 1px solid #e4e4e7;
   border-radius: 8px;
@@ -85,6 +93,7 @@ section {
   color: #52525b;
 }
 
+/* ===== Proyectos ===== */
 .project-title {
   font-size: 1.05rem;
   margin-bottom: 0.4rem;
@@ -102,6 +111,7 @@ section {
   margin: 1.5rem 0;
 }
 
+/* ===== Recomendaciones ===== */
 .recommendation-card {
   border: 1px solid #e4e4e7;
   border-radius: 8px;
@@ -115,6 +125,13 @@ section {
   color: #3f3f46;
 }
 
+.recommendation-author {
+  font-size: 0.75rem;
+  color: #71717a;
+  margin-top: 0.75rem;
+}
+
+/* ===== Formulario ===== */
 .form-label {
   font-size: 0.8rem;
   color: #52525b;
@@ -124,6 +141,19 @@ section {
   max-width: 660px;
 }
 
+.btn-submit {
+  --bs-btn-color: var(--purple);
+  --bs-btn-border-color: var(--purple);
+  --bs-btn-hover-bg: var(--purple);
+  --bs-btn-hover-border-color: var(--purple);
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-active-bg: var(--purple-dark);
+  --bs-btn-active-border-color: var(--purple-dark);
+  --bs-btn-active-color: #ffffff;
+  min-width: 120px;
+}
+
+/* ===== Botón "scroll to top" ===== */
 .scroll-top {
   position: fixed;
   right: 1.75rem;
@@ -143,11 +173,13 @@ section {
   z-index: 1000;
 }
 
-.scroll-top:hover {
+.scroll-top:hover,
+.scroll-top:focus {
   background-color: var(--purple-dark);
   color: #ffffff;
 }
 
+/* ===== Responsividad ===== */
 @media (max-width: 767px) {
   .hero-name {
     font-size: 1.75rem;

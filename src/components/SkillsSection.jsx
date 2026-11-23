@@ -1,8 +1,8 @@
 import { Col, Row } from 'react-bootstrap'
 import SkillCard from './SkillCard'
-import { skills } from '../data/portfolio'
 
-function SkillsSection() {
+// Sección de habilidades: cuadrícula responsiva (4 por fila en escritorio).
+function SkillsSection({ skills }) {
   return (
     <section id="skills" className="py-5">
       <h2 className="section-title">Skills</h2>

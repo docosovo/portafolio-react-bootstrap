@@ -1,3 +1,22 @@
+// Datos del portafolio. Mantenerlos separados de los componentes permite
+// reutilizar cada componente pasando la información mediante props.
+
+export const profile = {
+  name: 'Daniel Castañeda Tovar',
+  email: 'doco93229@gmail.com',
+  phone: '+57 302 213 7152',
+  greeting: "Hi, I'm Daniel Castañeda Tovar!",
+  about:
+    'I am a software development technologist from SENA with experience building full stack web applications. I work with HTML5, CSS3, JavaScript and Bootstrap on the front end, and Node.js and PHP on the back end, along with MySQL, PostgreSQL and MariaDB databases.',
+}
+
+export const navLinks = [
+  { label: 'About Me', href: '#about' },
+  { label: 'Skills', href: '#skills' },
+  { label: 'Projects', href: '#projects' },
+  { label: 'Recommendations', href: '#recommendations' },
+]
+
 export const skills = [
   { id: 1, name: 'HTML', years: '3 years experience', icon: 'bi-filetype-html', color: '#e34f26' },
   { id: 2, name: 'CSS', years: '3 years experience', icon: 'bi-filetype-css', color: '#264de4' },
@@ -35,17 +54,23 @@ export const projects = [
   },
 ]
 
-export const recommendations = [
+export const initialRecommendations = [
   {
     id: 1,
-    text: 'Daniel is a very quick learner and quickly grasps key concepts of Web development. He got a great attitude & he is an excellent team player. He has a curious mind and asks the right question. He takes initiative within a team and has potentials to lead the team.',
+    author: '',
+    message:
+      'Daniel is a very quick learner and quickly grasps key concepts of Web development. He got a great attitude & he is an excellent team player. He has a curious mind and asks the right question. He takes initiative within a team and has potentials to lead the team.',
   },
   {
     id: 2,
-    text: 'Working with Daniel has been an awesome experience. He is highly knowledgeable and always goes the extra step to make sure everything is right. For any future projects that need his expertise I would definitely want to work with him again.',
+    author: '',
+    message:
+      'Working with Daniel has been an awesome experience. He is highly knowledgeable and always goes the extra step to make sure everything is right. For any future projects that need his expertise I would definitely want to work with him again.',
   },
   {
     id: 3,
-    text: 'I had worked along with Daniel during the initial phase of our venture which needed Web development. He is a committed resource who has in depth knowledge about the domain. He will be an asset for any organisation!',
+    author: '',
+    message:
+      'I had worked along with Daniel during the initial phase of our venture which needed Web development. He is a committed resource who has in depth knowledge about the domain. He will be an asset for any organisation!',
   },
 ]

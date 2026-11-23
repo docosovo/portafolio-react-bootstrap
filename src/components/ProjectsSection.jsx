@@ -1,8 +1,8 @@
 import { Fragment } from 'react'
 import ProjectItem from './ProjectItem'
-import { projects } from '../data/portfolio'
 
-function ProjectsSection() {
+// Sección de proyectos: cada proyecto separado por una línea.
+function ProjectsSection({ projects }) {
   return (
     <section id="projects" className="py-5">
       <h2 className="section-title">Projects</h2>

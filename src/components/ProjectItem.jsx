@@ -1,3 +1,4 @@
+// Elemento individual de proyecto: título + descripción en viñeta.
 function ProjectItem({ title, description }) {
   return (
     <div>

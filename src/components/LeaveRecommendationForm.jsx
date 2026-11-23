@@ -1,16 +1,20 @@
 import { useState } from 'react'
 import { Alert, Button, Form } from 'react-bootstrap'
 
-function LeaveRecommendationForm() {
+// Formulario para dejar una recomendación.
+// Recibe por props la función onSubmit definida en App (estado elevado).
+function LeaveRecommendationForm({ onSubmit }) {
   const [name, setName] = useState('')
   const [message, setMessage] = useState('')
   const [sent, setSent] = useState(false)
 
   const handleSubmit = (event) => {
     event.preventDefault()
-    setSent(true)
+    if (!message.trim()) return
+    onSubmit({ author: name.trim(), message: message.trim() })
     setName('')
     setMessage('')
+    setSent(true)
   }
 
   return (
@@ -26,6 +30,7 @@ function LeaveRecommendationForm() {
             placeholder="Your name"
           />
         </Form.Group>
+
         <Form.Group className="mb-3" controlId="recommendationMessage">
           <Form.Label>Message</Form.Label>
           <Form.Control
@@ -37,11 +42,13 @@ function LeaveRecommendationForm() {
             required
           />
         </Form.Group>
+
         <div className="text-center">
-          <Button type="submit" variant="outline-secondary" className="px-4">
+          <Button type="submit" variant="outline-primary" className="btn-submit px-4">
             Submit
           </Button>
         </div>
+
         {sent && (
           <Alert variant="success" className="mt-3 mb-0 text-center">
             Thanks for your recommendation!

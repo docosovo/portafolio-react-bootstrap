@@ -1,5 +1,6 @@
 import { Button } from 'react-bootstrap'
 
+// Footer: botón flotante "scroll to top" en la esquina inferior derecha.
 function Footer() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
